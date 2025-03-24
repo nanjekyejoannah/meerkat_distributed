@@ -8,7 +8,8 @@ use crate::{
         typecheck::{self, FreshMetaGenerator, FreshTyvarGenerator, Type},
     },
     runtime::{ 
-        manager::{CodeUpdate, Manager, WorkerKind},
+        manager::Manager,
+        message::{CodeUpdate, WorkerKind},
         message::Val,
         transaction::{Txn, TxnId, WriteToName},
     },

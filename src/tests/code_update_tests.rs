@@ -44,6 +44,14 @@ async fn test_basic_code_update() {
     }
 }
 
+/*
+// assert f == 5
+
+var x = 2
+var y = 3
+def f = x + y
+*/
+
 #[tokio::test]
 async fn test_basic_code_update_with_multiple_managers() {
     let mut manager1 = Manager::new();

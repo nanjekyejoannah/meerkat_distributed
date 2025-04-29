@@ -10,6 +10,7 @@ use crate::{
 
 
 pub fn evaluate_expr(expr: &Expr, names_to_values: &HashMap<String, Option<Val>>) -> Option<Val> {
+   
     match expr {
         Expr::IdExpr { ident } => {
             return match names_to_values.get(ident) {
